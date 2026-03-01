@@ -137,18 +137,22 @@ ul { list-style: none; }
   padding: 28px 24px;
   border-left: 3px solid var(--border);
   transition: border-color .2s;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .hero-feature-card:hover { border-left-color: var(--text-secondary); }
 .hero-feature-card.active { border-left-color: var(--text); }
 .hero-feature-card h3 {
-  font-size: 16px; font-weight: 600; margin-bottom: 8px;
+  font-size: 20px; font-weight: 600; margin-bottom: 10px;
   display: flex; align-items: center; gap: 8px;
 }
 .hero-feature-card h3 .icon {
   width: 18px; height: 18px; color: var(--text-secondary);
 }
 .hero-feature-card p {
-  font-size: 14px; color: var(--text-muted); line-height: 1.55;
+  font-size: 16px; color: var(--text-muted); line-height: 1.55;
 }
 
 /* AI Chat mockup */
@@ -157,8 +161,7 @@ ul { list-style: none; }
   border: 1px solid var(--border);
   border-radius: var(--radius);
   box-shadow: var(--shadow-lg);
-  overflow: hidden;
-  max-height: 480px;
+  overflow: visible;
 }
 .chat-prompt {
   padding: 14px 20px;
